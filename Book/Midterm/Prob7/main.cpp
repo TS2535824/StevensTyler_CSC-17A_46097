@@ -12,12 +12,12 @@ using namespace std;  //Name-space used in the System Library
 
 //User Libraries
 struct Prime{
-	unsigned char prime;
-	unsigned char power;
+	int prime;
+	int power;
 };
 struct Primes{
 	Prime *prime;
-	unsigned char nPrimes;
+	int nPrimes;
 };
 
 //Global Constants
@@ -51,23 +51,30 @@ int main(int argc, char** argv) {
 //factors it into its primes                                            *
 //***********************************************************************
 Primes *factor(int n){
-
-    //declare variable
-    Primes p[50];
+    
+     //Declare variables and fill
+    int arySize=16;
+    Primes *p=new Primes;
+   // p->nPrimes=0;
+    p->prime=new Prime[50];
+    p->nPrimes=n;
+    int incre=2;
+    
+    
+    
     for(int i=0;i<50;i++){
-        p[i].prime->power=0;
-        p[i].prime->prime=0;
+
         
-    }
-    int exp=0;
-    
-    
-    for(int i=2;n==1;i++){
-      
-        while(n%i==0){
-  
+        while(n%incre==0){
+            
+            p->prime[i].prime=incre;
+            p->prime[i].power++;
+            n=n/incre;
+            
         } 
+        incre++;
     }
+ 
     
     return p;
 }
@@ -78,5 +85,18 @@ Primes *factor(int n){
 void prntPrm(Primes *f){
     
     
+    
+    int size=sizeof(f->prime->prime);
+       cout<<f->nPrimes<<" = ";
+    for(int i=0;i<size;i++){
+        
+        if(!f->prime[i].prime==0){
+            cout<<f->prime[i].prime<<"^"<<f->prime[i].power<<" * ";
+            
+        }
+        
+            
+        
+    }
   
 }
