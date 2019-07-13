@@ -136,13 +136,43 @@ Array *fillAry(int n, int modNum){
 
 Stats *stat(const Array *array){
     
+    
     cout<<endl<<"Stat function to be completed by the student"<<endl;
     Stats *stats=new Stats;
     stats->mode=new Array;
+    float sum=0;
+    
+    
+    //how to set size of array
     stats->mode->size=0;
+    
+    //number of modes found
     int nModes=0;
+    
+    //calculate mean
+    for(int i=0;i<16;i++){
+        sum+=array->data[i];
+    }
+    
+    stats->avg=sum/16;
+    cout<<"Average: "<<stats->avg<<endl;
+    
+    //calculate median
+    if(16%2==1){
+        stats->median=array->data[16/2];
+    }
+    else
+        stats->median=(float)(array->data[16/2-1]+array->data[16/2])/2.0;
+       
+    cout<<"Median: "<<stats->median<<endl;
+   
+    //if it finds more than one mode initialize array with number
     if(nModes!=0)stats->mode->data=new int[nModes];
+    
+    //frequencies found
     stats->modFreq=1;
+    
+    //the median
     stats->median=0;
     return stats;
 }

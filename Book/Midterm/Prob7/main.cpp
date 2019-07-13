@@ -34,7 +34,8 @@ int main(int argc, char** argv) {
     cout<<"Enter an integer between 2 and 10000: ";
     cin>>n;
     
-    while(n<2||n>1000){
+    //input validation
+    while(n<2||n>=10000){
         cout<<"INVAILD"<<endl;
         cout<<"Enter an integer between 2 and 10000: ";
         cin>>n;
@@ -42,7 +43,6 @@ int main(int argc, char** argv) {
     
     prntPrm(factor(n));
 
-    
     //Exit Program
     return 0;
 }
@@ -53,28 +53,24 @@ int main(int argc, char** argv) {
 Primes *factor(int n){
     
      //Declare variables and fill
-    int arySize=16;
-    Primes *p=new Primes;
-   // p->nPrimes=0;
-    p->prime=new Prime[50];
-    p->nPrimes=n;
-    int incre=2;
+    Primes *p=new Primes;        //a pointer to a structure
+    p->prime=new Prime[50];      //a pointer to a pointer array
+    p->nPrimes=n;               //set to initial value from use that will be factored
+    int incre=2;                //prime numbers start at 2
     
     
-    
+    //find prime numbers
     for(int i=0;i<50;i++){
 
-        
-        while(n%incre==0){
+        while(n%incre==0){//while there is no remainder
             
-            p->prime[i].prime=incre;
+            p->prime[i].prime=incre
             p->prime[i].power++;
             n=n/incre;
             
         } 
         incre++;
     }
- 
     
     return p;
 }
@@ -83,20 +79,13 @@ Primes *factor(int n){
 //and it's primes -> 120 = 2^3 * 3^1 * 5^1                         *
 //******************************************************************
 void prntPrm(Primes *f){
-    
-    
-    
-    int size=sizeof(f->prime->prime);
-       cout<<f->nPrimes<<" = ";
-    for(int i=0;i<size;i++){
+
+    //display results
+    cout<<f->nPrimes<<" = ";
+    for(int i=0;i<50;i++){
         
         if(!f->prime[i].prime==0){
-            cout<<f->prime[i].prime<<"^"<<f->prime[i].power<<" * ";
-            
-        }
-        
-            
-        
+            cout<<f->prime[i].prime<<"^"<<f->prime[i].power<<" * ";  
+        }        
     }
-  
 }

@@ -17,6 +17,7 @@ using namespace std;
 //User Libraries
 #include "prob1.h"
 
+
 //Global Constants, no Global Variables are allowed
 //Math/Physics/Conversions/Higher Dimensions - i.e. PI, e, etc...
 
@@ -95,8 +96,8 @@ int main() {
            
     }
     
-    //delete array
-    destroy(user);
+//    //delete array
+//    destroy(user);
     
     return 0;
 }
@@ -289,7 +290,7 @@ bool countDigits(string account){
 //*******************************************************************
 //Definition of function destroy. This function destroys the array   *
 //and free up allocated memory                                      *
-//*******************************************************************
-void destroy(DynAry *a){
-    delete a;
-}
+////*******************************************************************
+//void destroy(DynAry *a){
+//    delete a;
+//}
