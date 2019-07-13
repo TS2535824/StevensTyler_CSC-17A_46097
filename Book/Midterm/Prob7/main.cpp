@@ -18,6 +18,7 @@ struct Prime{
 struct Primes{
 	Prime *prime;
 	unsigned char nPrimes;
+};
 
 //Global Constants
 
@@ -51,28 +52,31 @@ int main(int argc, char** argv) {
 //***********************************************************************
 Primes *factor(int n){
 
+    //declare variable
+    Primes p[50];
+    for(int i=0;i<50;i++){
+        p[i].prime->power=0;
+        p[i].prime->prime=0;
+        
+    }
+    int exp=0;
+    
     
     for(int i=2;n==1;i++){
       
         while(n%i==0){
-           
-            exp++;
-            cout<<n/i<<endl;
-            n=n/i;
-            
-        }
-
-        if(exp<0){
-            index++;
-        }
-        exp=0;
-        
+  
+        } 
     }
+    
+    return p;
 }
 //******************************************************************
 //Definition of function printPrm, This function output the number *
 //and it's primes -> 120 = 2^3 * 3^1 * 5^1                         *
 //******************************************************************
 void prntPrm(Primes *f){
+    
+    
   
 }
