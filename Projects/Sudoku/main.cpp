@@ -39,14 +39,14 @@ int main(int argc, char** argv) {
     cout<<"\n\n\n\n\n";
     
     //Declare Variables and Initialize
-    int strikes=3;                              //chances for uses to try a value
-    int rows=9;                                 //rows
-    int cols=9;                                 //columns
-    int **dynAry=fill2D(rows,cols);             //pointer to a pointer array for sudoku matrix
-    DynAry2 *array2D=filStrc(dynAry,rows,cols);//fills structure from pointer array array
-    char score='A';                             //the score the user starts off with
-    bool stat1,stat2=true;                      //play state
-    string name;                                //users name
+    int strikes=3;                              
+    int rows=9;                                
+    int cols=9;                               
+    int **dynAry=fill2D(rows,cols);           
+    DynAry2 *array2D=filStrc(dynAry,rows,cols);
+    char score='A';                             
+    bool stat1,stat2=true;                      
+    string name;                                
     
     //get user name
     cin.ignore();
