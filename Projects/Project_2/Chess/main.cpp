@@ -1,25 +1,33 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   main.cpp
- * Author: steve
- *
+ * Author: Tyler Stevens
  * Created on July 19, 2019, 3:29 PM
+ * Purpose: Create a Chess game
  */
 
-#include <cstdlib>
+#include <iostream>
 
 using namespace std;
 
-/*
- * 
- */
-int main(int argc, char** argv) {
+//user Libraries
+#include "GamePiece.h"
 
+
+int main() {
+    //declare variables
+    bool cont=true;
+    int px=1,py=2;            //index for piece position
+    int mx=2,my=2;            //index for piece to move to
+    
+    GamePiece play;
+    play.validateMove(6,1,5,0);
+    play.print();
+    
+    play.validateMove(1,0,2,0);
+    play.print();
+    
+    
+    
     return 0;
 }
 
