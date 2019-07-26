@@ -5,6 +5,7 @@
  * Purpose: Create a Chess game
  */
 
+//System Libraries
 #include <iostream>
 #include <vector>
 
@@ -133,6 +134,8 @@ void WhoGoes(){
    cout << "first - second = ";
    cout << third.getFeet() << " feet, ";
    cout << third.getInches() << " inches.\n";
+   
+   //Age of players
    int age1,age2;
     
     cout<<"Player one please enter your age: ";
@@ -165,22 +168,5 @@ void WhoGoes(){
 //***************************************************************************
 void DisplayRules(){
     //abstract class
-    pawn p;
-    rook r;
-    knight n;
-    bishop b;
-    queen q;
-    king k;
-    abstract *abby1=&p;
-    abstract *abby2=&r;
-    abstract *abby3=&n;
-    abstract *abby4=&b;
-    abstract *abby5=&q;
-    abstract *abby6=&k;
-    abby1->type();
-    abby2->type();
-    abby3->type();
-    abby4->type();
-    abby5->type();
-    abby6->type();
+     
 }
