@@ -63,7 +63,7 @@ int main() {
             return 0;
         play.setItems(x,y,nx,ny);
         play.TryMove(x,y,nx,ny);
-        system("clear");
+     //   system("clear");
         play.print();
         
         cout<<"Player two's turn\n"<<endl;
@@ -72,7 +72,7 @@ int main() {
             return 0;
         play.setItems(x,y,nx,ny);
         play.TryMove(x,y,nx,ny);
-        system("clear");
+       // system("clear");
         play.print();
     }
     

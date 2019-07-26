@@ -79,11 +79,11 @@ public:
             
     
 };
-//Abstract class
-class interface:GamePiece{
-public:
-    virtual void move()=0;
-};
+////Abstract class
+//class interface:GamePiece{
+//public:
+//    virtual void move()=0;
+//};
 
 #endif /* GAMEPIECE_H */
 

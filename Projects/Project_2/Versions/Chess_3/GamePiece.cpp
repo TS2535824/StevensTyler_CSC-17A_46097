@@ -12,7 +12,7 @@ using namespace std;
 //*************************************************
 GamePiece::GamePiece(){
        
-        cout<<"Lets Play!"<<endl;
+        cout<<"Lets Play! Enter -1 to exit"<<endl;
 
 }
 
