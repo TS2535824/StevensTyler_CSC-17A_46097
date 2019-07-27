@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Chess_3_Final
+PROJECTNAME=ProblemOne
 
 # Active Configuration
 DEFAULTCONF=Debug

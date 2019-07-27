@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=chess_3_final
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/chess_3_final
+CND_ARTIFACT_NAME_Debug=final
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/final
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=chess3final.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/chess3final.tar
+CND_PACKAGE_NAME_Debug=final.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/final.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=chess_3_final
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/chess_3_final
+CND_ARTIFACT_NAME_Release=final
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/final
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=chess3final.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/chess3final.tar
+CND_PACKAGE_NAME_Release=final.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/final.tar
 #
 # include compiler specific variables
 #

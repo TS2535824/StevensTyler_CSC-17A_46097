@@ -257,8 +257,7 @@ specification
 		float Deposit(float);                //Utility Procedure
 		float Balance;                       //Property
 		int   FreqWithDraw;                  //Property
-		int   FreqDeposit;                   //Property4
-
+		int   FreqDeposit;                   //Property
 
 1)  The constructor initilizes the balance if greater than
 0 and sets the other properties to 0.
